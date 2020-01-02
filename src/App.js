@@ -4,7 +4,10 @@ import React from 'react'
 export default class App extends React.Component {
   
   componentDidMount() {
-    fetch('http://api.open-no')
+    return fetch('http://api.open-notify.org/astros.json')
+      .then(response => response.json())
+      .then(people => people)
+      .catch(error => console.log(error))
   }
   
   render() {
