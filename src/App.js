@@ -12,7 +12,7 @@ export default class App extends React.Component {
   
   render() {
     return(
-      <h1>I am in the app now </h1>  
+      <h1> I am in the app now </h1>  
     )
   }
   
